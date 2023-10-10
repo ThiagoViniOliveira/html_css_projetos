@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        body{
+            background-color: gray;
+
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;/*Deixa o conteudo no meio independente do tamanho da tela sem quebrar o site*/
+            min-width: 320px;
+            max-width: 800px;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testandoa  responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat pariatur maxime est, aspernatur reiciendis deleniti natus dolor unde a! Fuga similique accusantium odio possimus quibusdam vero ipsam quod magni! lorme
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit culpa dolores vel error eos praesentium eveniet qui minus, exercitationem quod adipisci nostrum consequatur. Doloremque rem ut, itaque error fugiat laborum!Lorem
+        </p>
+        
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!--Aqui estou dizendo que a imagem digitada no srcset será mantida até que chegue 800px, quando passar de 800px, ele vai usar a img de baixo-->
+            
+            <img src="imagens/irina-blok.jpg" alt=""></picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat pariatur maxime est, aspernatur reiciendis deleniti natus dolor unde a! Fuga similique accusantium odio possimus quibusdam vero ipsam quod magni! lorme
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit culpa dolores vel error eos praesentium eveniet qui minus, exercitationem quod adipisci nostrum consequatur. Doloremque rem ut, itaque error fugiat laborum!Lorem
+        </p>
+    </main>
+</body>
+</html>
